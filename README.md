@@ -1,4 +1,4 @@
-## Project: Kinematics Pick & Place
+## Project: 3D Perception
 
 **Sergei Surovtsev**
 <br/>
