@@ -24,7 +24,7 @@ from pr2_robot.srv import *
 from rospy_message_converter import message_converter
 import yaml
 
-scene_number = 3
+scene_number = 1
 TEST_SCENE_NUM = Int32()
 TEST_SCENE_NUM.data = scene_number
 
@@ -205,7 +205,7 @@ def pcl_callback(pcl_msg):
         ros_cluster = pcl_to_ros(pcl_cluster)
 
         # Extract histogram features
-        chists = compute_color_histograms(ros_cluster, using_hsv=True)
+        chists = compute_color_histograms(ros_cluster, using_hsv=False)
         normals = get_normals(ros_cluster)
         nhists = compute_normal_histograms(normals)
         feature = np.concatenate((chists, nhists))
@@ -319,7 +319,7 @@ def pr2_mover(object_list):
         output_items.append(yaml_item)
 
     print(output_items)
-    send_to_yaml("output_3.yaml", output_items)
+    send_to_yaml("output_1.yaml", output_items)
     rospy.wait_for_service('pick_place_routine')
 
     for i in range(len(object_list_param)):

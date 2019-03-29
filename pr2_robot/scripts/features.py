@@ -57,9 +57,9 @@ def compute_normal_histograms(normal_cloud):
         norm_z_vals.append(norm_component[2])
 
     # TODO: Compute histograms of normal values (just like with color)
-    hist_1, _ = np.histogram(norm_x_vals, bins=96, density=True, range=(-np.pi/2, np.pi/2))
-    hist_2, _ = np.histogram(norm_y_vals, bins=96, density=True, range=(-np.pi/2, np.pi/2))
-    hist_3, _ = np.histogram(norm_z_vals, bins=96, density=True, range=(-np.pi/2, np.pi/2))
+    hist_1, _ = np.histogram(norm_x_vals, bins=96, density=True, range=(-1.0, 1.0))
+    hist_2, _ = np.histogram(norm_y_vals, bins=96, density=True, range=(-1.0, 1.0))
+    hist_3, _ = np.histogram(norm_z_vals, bins=96, density=True, range=(-1.0, 1.0))
 
     # TODO: Concatenate and normalize the histograms
     features = np.concatenate((hist_1, hist_2, hist_3), axis=0) 
