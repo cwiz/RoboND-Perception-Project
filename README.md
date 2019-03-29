@@ -38,8 +38,6 @@ First step towards object recognition is training an SVM model.
 In this case we use histograms over RGB channels and hisotgrams over surface normals. 
 Conversion to HSV worked fine during training but real results were faulty. My speculation that in our case color information of objects is more important than color intensity values.
 
-Code used for feature extraction: 
-
 Confusion matrix we get from extracting features:
 
 ![segmentation-obstacles](https://github.com/cwiz/RoboND-Perception-Project/blob/master/images/figure_2.png?raw=true "Confusion Matrix")
