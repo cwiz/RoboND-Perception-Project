@@ -42,7 +42,9 @@ Confusion matrix we get from extracting features:
 
 ![segmentation-obstacles](https://github.com/cwiz/RoboND-Perception-Project/blob/master/images/figure_2.png?raw=true "Confusion Matrix")
 
-Then we use trained model for object recognition. [link](https://github.com/cwiz/RoboND-Perception-Project/blob/master/pr2_robot/scripts/features.py) 
+Then we use trained model for object recognition. 
+
+[code](https://github.com/cwiz/RoboND-Perception-Project/blob/master/pr2_robot/scripts/features.py) 
 
 #### Processing Pipeline
 
@@ -53,7 +55,7 @@ Then we use trained model for object recognition. [link](https://github.com/cwiz
 5. Object clustering using euclidean distance
 6. Object recognition using previously trained SVM model
 
-[link](https://github.com/cwiz/RoboND-Perception-Project/blob/master/pr2_robot/scripts/object_recognition.py) 
+[code](https://github.com/cwiz/RoboND-Perception-Project/blob/master/pr2_robot/scripts/object_recognition.py) 
 
 ### Results
 
