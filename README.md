@@ -36,7 +36,7 @@ Robotic arm used in this project is [Willow Garage PR2](https://www.youtube.com/
 First step towards object recognition is training an SVM model. 
 
 In this case we use histograms over RGB channels and hisotgrams over surface normals. 
-Conversion to HSV workd fine during training but real results were faulty. My speculation that in our case color information of objects is more important than color intensity values.
+Conversion to HSV worked fine during training but real results were faulty. My speculation that in our case color information of objects is more important than color intensity values.
 
 Code used for feature extraction: 
 
